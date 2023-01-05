@@ -3,10 +3,10 @@ const main = async () => {
     memberNFT = await MemberNFT.deploy();
     await memberNFT.deployed();
 
-    console.log(`Contract deployed to; ${memberNFT.address}`)
+    console.log(`Contract deployed to; ${memberNFT.address}`);
 }
 
-const deploy = async () =>{
+const deploy = async () => {
     try {
         await main();
         process.exit(0);
